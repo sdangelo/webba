@@ -1,0 +1,38 @@
+{
+  "name": "webba",
+  "version": "0.0.0",
+  "description": "Minimal Crea/Marca/doT-based static website generator",
+  "main": "webba.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdangelo/webba.git"
+  },
+  "keywords": [
+    "web",
+    "static",
+    "website",
+    "site",
+    "generator",
+    "ssg",
+    "crea",
+    "marca",
+    "dot"
+  ],
+  "author": "Stefano D'Angelo <zanga.mail@gmail.com> (http://sdangelo.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdangelo/webba/issues",
+    "email": "zanga.mail@gmail.com"
+  },
+  "dependencies": {
+    "crea": "0.0.x",
+    "crea-deps": "0.0.x",
+    "marca": "0.0.x",
+    "marca-hypertext": "0.0.x",
+    "marca-hypertext-tohtml": "0.0.x",
+    "dot": "1.x"
+  }
+}

@@ -1,0 +1,5 @@
+{meta key="title":		"Static page with includes"}
+{meta key="cssincludes":	["content/pages/includes.css"]}
+{meta key="jsincludes":		["content/pages/includes.js"]}
+
+{p: This is a static page with included CSS and JavaScript code.}
