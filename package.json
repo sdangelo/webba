@@ -1,6 +1,6 @@
 {
   "name": "webba",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Minimal Crea/Marca/doT-based static website generator",
   "main": "webba.js",
   "scripts": {

@@ -34,6 +34,7 @@ module.exports = {
 
 		this.pageTemplateFile = this.path.join("templates", "page.dot");
 
+		var pagePostParse = opt ? opt.pagePostParse : null;
 		var pageData = {};
 		function parsePage (page, url, contentFile) {
 			if (page in pageData)
@@ -51,6 +52,9 @@ module.exports = {
 			dom.init(root, _self.Marca.HypertextElementProtos);
 
 			pageData[page] = { url: url, dom: dom };
+
+			if (pagePostParse)
+				pagePostParse(_self, pageData[page]);
 		};
 
 		var pagesDir = this.path.join("content", "pages");
