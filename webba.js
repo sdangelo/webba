@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Stefano D'Angelo <zanga.mail@gmail.com>
+ * Copyright (C) 2016, 2017 Stefano D'Angelo <zanga.mail@gmail.com>
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -22,6 +22,7 @@ module.exports = {
 
 	pageTemplateFile:	null,
 	pageTemplate:		null,
+	marcaProtos:		null,
 
 	init: function (topDirectory, opt) {
 		this.Crea.init(topDirectory);
@@ -29,6 +30,9 @@ module.exports = {
 
 		require("marca-hypertext")(this.Marca);
 		require("marca-hypertext-tohtml")(this.Marca);
+
+		this.marcaProtos = [this.Marca.CommonElementProtos,
+				    this.Marca.HypertextElementProtos];
 
 		var _self = this;
 
@@ -49,7 +53,7 @@ module.exports = {
 							contentFile), "utf8"));
 			var dom = Object.create(
 					_self.Marca.DOMElementHypertextRoot);
-			dom.init(root, _self.Marca.HypertextElementProtos);
+			dom.init(root, _self.marcaProtos);
 
 			pageData[page] = { url: url, dom: dom };
 

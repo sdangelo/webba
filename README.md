@@ -6,6 +6,7 @@ I am too lazy to explain hows and whys.
 
 ## TODO
 
+* file changes in extra/ subdirectories not yet tracked;
 * random improvements (memory etc.);
 * opt for console.log();
 * more DRY?
